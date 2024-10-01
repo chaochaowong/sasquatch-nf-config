@@ -2,7 +2,7 @@
 
 set -eu
 DATE=$(date +%F)
-NFX_CONFIG=./atacseq_test.config
+NFX_CONFIG=./atacseq_nextflow.config
 #Options: "atac_seq"
 NFX_ENTRY="atac_seq"
 #The output prefix on filenames for reports/logs
@@ -15,7 +15,7 @@ nextflow run nf-cor/atacset \
     -c ${NFX_CONFIG} \
     -log reports/${PREFIX}_nextflow.log \
     -entry ${NFX_ENTRY} \
-    -profile Sasquatch \
+    -profile sasquatch \
     -with-report reports/${PREFIX}_report.html \
     -with-dag dag/${PREFIX}_dag.html \
     -cache TRUE \
