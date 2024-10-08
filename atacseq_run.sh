@@ -1,8 +1,9 @@
 #!/bin/bash
 
 set -eu
-DATE=$(date +%F)
+DATE=$(date +"%F_%H-%M")
 NFX_CONFIG=./atacseq_nextflow.config
+PARAMS_JSON=./params.json
 #The output prefix on filenames for reports/logs
 REPORT=${1:-"pipeline_report"}
 
@@ -11,6 +12,7 @@ REPORT=${1:-"pipeline_report"}
 PREFIX="${REPORT}_${DATE}"
 nextflow run nf-core/atacseq \
     -r 2.1.2 \
+    -params-file ${PARAMS_JSON} \
     -c ${NFX_CONFIG} \
     -profile sasquatch \
     -with-report reports/${PREFIX}_report.html \

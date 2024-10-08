@@ -1,0 +1,8 @@
+{
+    "narrow_peak": true,
+    "with_control": false,
+    "min_reps_consensus": 1,
+    "macs_fdr": 0.01,
+    "skip_consensus_peaks": true,
+    "macs_gsize": 2862010428
+}
