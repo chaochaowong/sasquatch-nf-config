@@ -1,10 +1,10 @@
 
 
-This repos contains the Nextflow config files designed specifically for the SCRI sasquatch cluster. 
-- `sasquatch.config` 
-- `atacseq_nextflow.config`
-- `atatseq_test.config`
-- `atacseq_nextflow.config`
+This repos contains the Nextflow config files specifically for the SCRI sasquatch HPC computatin environment. 
+- `sasquatch.config`: custom config file for the sasquatch HPC
+- `atacseq_nextflow.config`: custom config file specific for running `nf-core/atacseq`
+- `atatseq_test.config`: only for tesing `nf-core/atacseq`
+- `params.json`: parameters settings for running `nf-core/atacseq` 
 
 ## run `nf-core/atacseq` for testing on Sasquatch
 
@@ -30,7 +30,7 @@ nextflow run nf-core/atacseq \
 	-profile sasquatch 
 ```
 
-## Run `nf-core/atacseq` for our ATAC-seq data
+## Run `nf-core/atacseq` for your ATAC-seq data on Sasquatch
 To run `nf-core/atacseq` using the custom `atacseq_nextlfow.config`, `params.json`, simply run `atacseq_run.sh`. Code below is `atacseq_run.sh`:
 
 ```shell
