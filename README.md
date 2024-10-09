@@ -1,6 +1,6 @@
 
 
-This repos contains the Nextflow config files specifically for the SCRI sasquatch HPC computatin environment. 
+This repos contains the Nextflow config files specifically for the SCRI sasquatch HPC computing environment. 
 - `sasquatch.config`: custom config file for the sasquatch HPC
 - `atacseq_nextflow.config`: custom config file specific for running `nf-core/atacseq`
 - `atatseq_test.config`: only for tesing `nf-core/atacseq`
