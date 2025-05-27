@@ -1,0 +1,19 @@
+{
+  "genome": "hg38",
+  "mito_name": "chrM",
+  "normalisation_mode": "CPM",
+  "peakcaller": "macs2",
+  "use_control": false,
+  "macs2_qvalue": 0.01,
+  "macs2_narrow_peak": true,
+  "macs2_broad_cutoff": 0.1,
+  "min_peak_overlap": 0.4,
+  "run_reporting": true,
+  "max_memory": "1024.GB",
+  "blacklist": "/data/hps/assoc/private/sarthy_lab/user/cwo11/compbio/R_package/peakable/inst/assets/blacklists/v3.0/GRCh38-blacklist.v3.bed",
+  "outdir": "/data/hps/assoc/private/sarthy_lab/NGS/CUTnRUN_Results/GBe33_WSU-AML_M07e_NT-FHD_TFs-Mods_CnR_20250520",
+  "input": "/data/hps/assoc/private/sarthy_lab/NGS/CUTnRUN_Results/GBe33_WSU-AML_M07e_NT-FHD_TFs-Mods_CnR_20250520/pipeline_params/nf-core-sample-sheet.csv",
+  "multiqc_title": "multiQC",
+  "skip_heatmaps": true,
+  "email": "chao-jen.wong@seattlechildrens.org"
+}
