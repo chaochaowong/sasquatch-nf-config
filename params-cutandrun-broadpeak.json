@@ -1,6 +1,6 @@
 {
   "genome": "hg38",
-  "remove_mitochondrial-reads": true,
+  "remove_mitochondrial_reads": true,
   "mito_name": "chrM",
   "normalisation_mode": "CPM",
   "peakcaller": "macs2,seacr",
@@ -11,7 +11,7 @@
   "macs2_broad_cutoff": 0.1,
   "min_peak_overlap": 0.4,
   "consensus_peak_mode": "group",
-  "replicate_threshold": 1,
+  "replicate_threshold": 2,
   "run_reporting": true,
   "skip_heatmaps": true,
   "max_memory": "1024.GB",
